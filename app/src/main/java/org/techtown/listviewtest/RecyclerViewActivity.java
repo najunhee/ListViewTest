@@ -30,6 +30,9 @@ public class RecyclerViewActivity extends Activity {
         LinearLayoutManager mLinearLayoutManager = new LinearLayoutManager(this);
         recyclerview.setLayoutManager(mLinearLayoutManager);
 
+        //수평방향인경우
+//        recyclerview.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
+
         adapter = new RecyclerViewAdapter(listSampleData);
         recyclerview.setAdapter(adapter);
 
